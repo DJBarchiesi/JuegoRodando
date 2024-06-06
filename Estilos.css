@@ -1,30 +1,4 @@
-.Resolucion {
-    width: 100%;
-    text-align: center;
-}
 
-/* Estilos para pantallas de computadora */
-@media (min-width: 768px) {
-    /* Mostrar el HTML de Compu */
-    .Computadora {
-        display: block;
-    }
-    /* Ocultar el HTML de Celu */
-    .Celular {
-        display: none;
-    }
-}
-/* Estilos para pantallas de celular */
-@media (max-width: 767px) {
-    /* Mostrar el HTML de Celu */
-    .Celular {
-        display: block;
-    }
-    /* Ocultar el HTML de Compu */
-    .Computadora {
-        display: none;
-    }
-}
 
 @font-face {
     font-family: 'sourcesanspro';
@@ -204,20 +178,6 @@ body {
     font-family: "sourcesanspro";
 }
 
-/* Foto: Juan Byro */
-.Juan_Byro {
-    position: absolute;
-    left: 17px;
-    top: 86px;
-    width: 94px;
-    height: 130px;
-    border-radius: 5px;
-}
-
-/* Texto: Juan Byro */
-.text-block {
-    position: absolute;
-}
 
 .text-titulo {
     font-family: "sourcesanspro", sans-serif;
@@ -229,15 +189,6 @@ body {
     font-size: 12px;
 }
 
-/* Foto: Dj Barchiesi */
-.Dj_Barchiesi {
-    position: absolute;
-    left: 251px;
-    top: 239px;
-    width: 129px;
-    height: 176px;
-    border-radius: 5px;
-}
 
 /* Estilos generales */
 .text {
@@ -340,4 +291,4 @@ body {
 }
 .decision { 
     margin: 10px;
-}
+}   
