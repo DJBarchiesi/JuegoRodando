@@ -31,7 +31,11 @@ body {
     box-sizing: border-box;
 }
 
-#fondo_header_footer{
+#fondo_footer{
+    background-color: rgb(34, 24, 126);
+}
+
+#fondo_header{
     background-color: rgb(34, 24, 126);
 }
 
@@ -46,6 +50,16 @@ body {
 }
 
 #juego_rodando_titulo{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#juego_rodando_puntaje{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#texto_juego{
     text-align: center;
     margin-top: 10px;
 }
