@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Segundo Parcial </title>
         <link rel="stylesheet" href="Estilos.css">
+        <script src="modonocturno.js"></script>
         <script src="juego-rodando.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -26,19 +27,19 @@
                             <div class="col-md-12 col-sm-12 col-lg-12">
                                 <ul class="nav nav-pills nav-fill">
                                     <li class="nav-item">
-                                        <a href="https://djbarchiesi.github.io/DDW-Segundo-Parcial/index.html"><button class="btn btn-outline-dark"><h3> Home </h3></button></a>
+                                        <a id="botones_menu" href="https://djbarchiesi.github.io/DDW-Segundo-Parcial/index.html"> Home </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a href="https://djbarchiesi.github.io/DDW-Segundo-Parcial/Integrantes.html"><button class="btn btn-outline-dark"><h3> Integrantes </h3></button></a>
+                                        <a id="botones_menu" href="https://djbarchiesi.github.io/DDW-Segundo-Parcial/Integrantes.html"> Integrantes </a>
+                                        </li>
+
+                                    <li class="nav-item">
+                                        <a id="botones_menu" href="https://djbarchiesi.github.io/DDW-Segundo-Parcial/Avances.html"> Avances </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a href="https://djbarchiesi.github.io/DDW-Segundo-Parcial/Avances.html"><button class="btn btn-outline-dark"><h3> Avances </h3></button></a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="https://djbarchiesi.github.io/DDW-Segundo-Parcial/Juegos.html"><button class="btn btn-outline-dark"><h3> Juegos </h3></button></a>
+                                        <a id="botones_menu" href="https://djbarchiesi.github.io/DDW-Segundo-Parcial/Juegos.html"> Juegos </a>
                                     </li>
                                 </ul>
                             </div>
@@ -89,13 +90,8 @@
                 </footer>
 
                 <script>
-                    function ModoOscuro() {
-                        var element = document.body;
-                        element.classList.toggle("dark-mode");
-                    }
-
                     document.getElementById("texto_juego_rodando").innerHTML =
-                    "¡Bienvenidos! <br> <br> En este juego simularemos un día en la vida de una persona que se traslada en silla de ruedas donde se deberán tomar decisiones sobre acciones cotidianas y se dará puntaje acorde a si la opción seleccionada es la mejor o no. <br>El autor de este juego es <strong> Diego Barchiesi</strong> y comparto aqui el link al <a href='https://github.com/DJBarchiesi/JuegoRodando' target='_blank'>repositorio</a> <br> <br> ... Comenzamos. <br> Es lunes por la mañana de un día frío de invierno. Trabajas en una oficina y tu horario es de 9 a 17 hs. Para llegar allí, utilizas el transporte público, el recorrido suele durar 1 hs. Tienes que decidir si despertar a las 6am para salir temprano y así llegar con tiempo evitando la hora pico o despertar a las 7.30hs, pudiendo así descansar más, llegando justo a tiempo para el trabajo."
+                    "¡Bienvenidos! <br> <br> En este juego simularemos un día en la vida de una persona que se traslada en silla de ruedas donde se deberán tomar decisiones sobre acciones cotidianas y se dará puntaje acorde a si la opción seleccionada es la mejor o no.  <br> <br> ... Comenzamos. <br> Es lunes por la mañana de un día frío de invierno. Trabajas en una oficina y tu horario es de 9 a 17 hs. Para llegar allí, utilizas el transporte público, el recorrido suele durar 1 hs. Tienes que decidir si despertar a las 6am para salir temprano y así llegar con tiempo evitando la hora pico o despertar a las 7.30hs, pudiendo así descansar más, llegando justo a tiempo para el trabajo."
             
                     var puntaje = 0;
                     document.getElementById("puntaje_juego_rodando").innerHTML =
@@ -103,7 +99,7 @@
             
                     document.getElementById("boton_op1_juego_rodando").addEventListener("click", pag_ini_decision_6am)
                     document.getElementById("boton_op2_juego_rodando").addEventListener("click", pag_ini_decision_730am)
-                </script>
+               </script>
             </div>
         </div>
     </body>

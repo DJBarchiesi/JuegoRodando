@@ -8,6 +8,21 @@
     src: url(https://design.penpot.app/fonts/sourcesanspro-regular.woff) format('woff');
 }
 
+#botones_menu{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;   
+  }
+
+#boton_dark_mode{
+    color: rgb(34, 24, 126);
+    font-weight: bold;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -23,11 +38,8 @@ body {
     align-items: center;
     width: 100vw;
     min-height: 100vh;
-}
-
-.dark-mode {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .text-node { background-clip: text !important; -webkit-background-clip: text !important; }
