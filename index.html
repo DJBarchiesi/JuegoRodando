@@ -24,6 +24,9 @@
 
                     <div class="container" id="menu">
                         <div class="row">
+                            <div class="col-md-12 col-sm-12 col-lg-12" style="text-align: center;">
+                                <button id="boton_dark_mode" class="btn btn-outline-dark" onclick="darkmode()">Toggle dark mode</button>
+                            </div>
                             <div class="col-md-12 col-sm-12 col-lg-12">
                                 <ul class="nav nav-pills nav-fill">
                                     <li class="nav-item">
@@ -90,6 +93,11 @@
                 </footer>
 
                 <script>
+                    function darkmode() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                    }
+
                     document.getElementById("texto_juego_rodando").innerHTML =
                     "¡Bienvenidos! <br> <br> En este juego simularemos un día en la vida de una persona que se traslada en silla de ruedas donde se deberán tomar decisiones sobre acciones cotidianas y se dará puntaje acorde a si la opción seleccionada es la mejor o no.  <br> <br> ... Comenzamos. <br> Es lunes por la mañana de un día frío de invierno. Trabajas en una oficina y tu horario es de 9 a 17 hs. Para llegar allí, utilizas el transporte público, el recorrido suele durar 1 hs. Tienes que decidir si despertar a las 6am para salir temprano y así llegar con tiempo evitando la hora pico o despertar a las 7.30hs, pudiendo así descansar más, llegando justo a tiempo para el trabajo."
             

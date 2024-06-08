@@ -89,6 +89,7 @@ function pag_mapa_decision_col_lejano() {
 
     document.getElementById("boton_op2_juego_rodando").innerHTML =
     "Ir al trabajo"
+    document.getElementById("boton_op2_juego_rodando").style.display = "none"
     document.getElementById("boton_op2_juego_rodando").addEventListener("click", pag_col_legajo_decision_trabajo)
 }
 
@@ -112,6 +113,7 @@ function pag_col_cercado_decision_pedir_acercarse() {
 
     document.getElementById("boton_op2_juego_rodando").innerHTML =
     "Ir al Colectivo Lejano"
+
     document.getElementById("boton_op2_juego_rodando").addEventListener("click", pag_mapa_decision_col_lejano)
 }
 
@@ -135,6 +137,7 @@ function pag_col_legajo_decision_trabajo() {
 
     document.getElementById("boton_op2_juego_rodando").innerHTML =
     "Bajar por el cordón"
+    document.getElementById("boton_op2_juego_rodando").style.display = "inline"
     document.getElementById("boton_op2_juego_rodando").addEventListener("click", pag_trabajo_decision_bajar)
 }
 
@@ -227,6 +230,7 @@ function pag_trabajo_preguntar() {
 
     document.getElementById("boton_op2_juego_rodando").innerHTML =
     "Ir a casa"
+    document.getElementById("boton_op2_juego_rodando").style.display = "none"
     document.getElementById("boton_op2_juego_rodando").addEventListener("click", pag_restaurante_ir_a_casa)
 }
 
@@ -250,6 +254,7 @@ function pag_restaurante_cambiar_lugar() {
 
     document.getElementById("boton_op2_juego_rodando").innerHTML =
     "Ir a casa"
+    document.getElementById("boton_op2_juego_rodando").style.display = "none"
     document.getElementById("boton_op2_juego_rodando").addEventListener("click", pag_restaurante_ir_a_casa)
 }
 
@@ -275,7 +280,7 @@ function pag_restaurante_ir_a_casa() {
     
     document.getElementById("boton_op2_juego_rodando").innerHTML =
     "Muchas gracias"
-
+    document.getElementById("boton_op2_juego_rodando").style.display = "none"
     document.getElementById("boton_op1_juego_rodando").removeEventListener("click", pag_restaurante_ir_a_casa)    
     document.getElementById("boton_op2_juego_rodando").removeEventListener("click", pag_restaurante_ir_a_casa)
 }

@@ -23,6 +23,16 @@
     font-weight: bold;
 }
 
+#boton_op1_juego_rodando{
+    color: rgb(34, 24, 126);
+    font-weight: bold; 
+}
+
+#boton_op2_juego_rodando{
+    color: rgb(34, 24, 126);
+    font-weight: bold; 
+}
+
 html, body {
     margin: 0;
     padding: 0;
