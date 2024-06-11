@@ -276,8 +276,10 @@ function pag_restaurante_ir_a_casa() {
         "Esperamos que este juego te haya ayudado a apreciar los desafíos que existen, pero quizás se nos pasan por alto. El objetivo de esta actividad es de mostrar las dificultades del día a día de una persona en silla de ruedas que pueden pasar desapercibidas para muchas personas. <br>Esto es solo una mínima porción de la realidad a la que se enfrentan. <br>¿Qué pasaría si no hay otra opción que tomar un colectivo desde la vereda y no es posible para el chofer acercarse al cordón? <br>¿O una calle no tiene rampa en sus equinas o las que tiene están rotas? <br>¿Cómo puede hacer una persona en silla de ruedas en esos casos?. <br><br>Estas con cuestiones que como sociedad deberíamos considerarlas para actuar en consecuencia y asegurar que todo, desde transporte, calles, accesos a lugares sean accesibles para todos."
     
     document.getElementById("boton_op1_juego_rodando").innerHTML =
-    "Muchas gracias"
+    "Volver a Jugar"
     
+    document.getElementById("boton_op1_juego_rodando").addEventListener("click", function() { window.location.href = "index.html";})
+
     document.getElementById("boton_op2_juego_rodando").innerHTML =
     "Muchas gracias"
     document.getElementById("boton_op2_juego_rodando").style.display = "none"
