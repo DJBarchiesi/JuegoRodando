@@ -113,6 +113,7 @@ function pag_col_cercado_decision_pedir_acercarse() {
 
     document.getElementById("boton_op2_juego_rodando").innerHTML =
     "Ir al Colectivo Lejano"
+    document.getElementById("boton_op2_juego_rodando").style.display = "none"
 
     document.getElementById("boton_op2_juego_rodando").addEventListener("click", pag_mapa_decision_col_lejano)
 }
